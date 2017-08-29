@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        <!--标签选择器-->、
+        p{
+            color: #ff0000;
+        }
+        /*id选择器*/
+        #aa{
+            color: #ff0000;
+        }
+        #bb{
+            color: #ff0000;
+        }
+        /*类选择器*/
+        .cc{
+            color: #ff0000;
+        }
+        /*交集选择器*/
+        p.cc{
+            color: #ff0000;
+        }
+        /*并集选择器*/
+        #aa,#bb{
+            color: #ff0000;
+        }
+        /*后代选择器*/
+        div p{
+            color: #ff0000;
+        }
+        /*子代选择器*/
+        div>p {
+            color: #ff0000;
+        }
+        /*通用兄弟选择器*/
+        h1~p{
+            color: #ffff00;
+        }
+        /*相邻兄弟选择器*/
+        h1+p{
+            color: #ff0000;
+        }
+        /*序选择器*/
+        p:nth-of-type(n+1){
+            color: #ff0000;
+        }
+        p:first-child{
+            color: #000;
+        }
+        p:last-child{
+            color: #ffff00;
+        }
+        P:only-child{
+            color: #000;
+        }
+        P:nth-child(){
+            color: #ffaa00;
+        }
+        P:nth-last-child(1){
+            color: #000;
+        }
+        /*属性选择器*/
+        p[id]{
+            color: #ff0000;
+        }
+        p[class]{
+            color: #ff0000;
+        }
+        p[class=cc]{
+            color: #ff0000;
+        }
+        /*通配符选择器*/
+        *{
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>我是标题</h1>
+    <p id="aa" class="cc">我是段落1</p>
+    <p id="bb" class="cc">我是段落2</p>
+</div>
+</body>
+</html>

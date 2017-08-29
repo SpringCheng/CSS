@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--属性选择器-->
+    <style>
+         p[id]{
+              color: #3344ff;
+          }
+         /*并选择器*/
+         #aa,#cc,#bb{
+             color: #00ff00;
+         }
+          p[class]{
+            color: #ff0000;
+          }
+        P[id=jj]{
+            color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <p id="aa">我是段落1</p>
+    <p id="bb" class="cc">我是段落2</p>
+    <p class="cc">我是段落3</p>
+    <p id="jj">我是段落4</p>
+    <p id="cc" class="ff">我是段落5</p>
+</body>
+</html>

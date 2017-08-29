@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        p:first-child{
+            color: #ff0000;
+        }
+        h1:first-child{
+            color:#ff00ff;
+        }
+        p:first-of-type{
+            color: #aaff11;
+        }
+        P:last-child{
+            color: #ccaa00;
+        }
+        P:last-of-type{
+            color: #ff0000;
+        }
+
+        p:nth-of-type(3){
+            color: #ff5500;
+        }
+        */
+        p:only-child{
+
+        }
+        /*  p:last-child{
+              color: #00ff00;
+          }
+          p:first-of-type{
+              color: #0000ff;
+          }
+          p:last-of-type{
+              color: #00ff00;
+          }
+         p:nth-child(3){
+             color: #00ff00;
+         }
+         p:nth-of-type(1){
+             color: #ffff33;
+         }
+         p:nth-last-child(2){
+             color: #aabbcc;
+         }
+         p:nth-last-of-type(2){
+             color:#aabb33;
+         }*/
+        li:only-child{
+            color: #00ffff;
+        }
+        p:only-of-type{
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+<!--同级别的第几个-->
+    <h1>我是标题1</h1>
+    <p>我是段落1</p>
+    <p>我是段落2</p>
+    <p>我是段落3</p>
+    <p>我是段落4</p>
+    <div>
+        <p>我是段落5</p>
+        <p>我是段落6</p>
+        <p>我是段落7</p>
+        <p>我是段落8</p>
+    </div>
+    <div>
+        <ul>
+            <li>我是段落</li>
+            <p>我是段落2</p>
+        </ul>
+        <ul>
+            <li>我是列表</li>
+        </ul>
+    </div>
+</body>
+</html>
